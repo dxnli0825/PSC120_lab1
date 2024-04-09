@@ -12,12 +12,68 @@ class Agent {
 	        };
 		
 		
+	package lab1;
+import java.util.Random;
+
+class Agent {
+	
+		Random rd = new Random();
+		
+		String[] months = {
+	            "January", "February", "March", "April", "May", "June",
+	            "July", "August", "September", "October", "November", "December"
+	        };
+		
+		
 	public void printMonths()
 	{
 		for (int i =0;i<months.length;i++) {
             System.out.println((i+1) +"." + months[i]);
         }
 	}
+	
+	public void printRandomList(int length) {
+        System.out.println("Randomly generated list:");
+        Random rd = new Random();
+        
+        for (int i = months.length - 1; i > 0; i--) {
+            int index = rd.nextInt(i + 1);
+            // Swap the elements at index i and index
+            String temp = months[i];
+            months[i] = months[index];
+            months[index] = temp;
+        }
+        
+        for (int i = 0; i < length; i++) {
+            // Use switch statement to convert index to month number
+            int monthIndex = i + 1;
+            String monthNumber;
+            switch (months[i]) {
+            case "January": monthNumber = "1"; break;
+            case "February": monthNumber = "2"; break;
+            case "March": monthNumber = "3"; break;
+            case "April": monthNumber = "4"; break;
+            case "May": monthNumber = "5"; break;
+            case "June": monthNumber = "6"; break;
+            case "July": monthNumber = "7"; break;
+            case "August": monthNumber = "8"; break;
+            case "September": monthNumber = "9"; break;
+            case "October": monthNumber = "10"; break;
+            case "November": monthNumber = "11"; break;
+            case "December": monthNumber = "12"; break;
+            default: monthNumber = "Invalid";
+            }
+            System.out.println(monthNumber + ". " + months[i]);
+        }
+    }
+	
+}
+
+
+
+
+
+
 	
 	public void printRandomList(int length) {
 	
