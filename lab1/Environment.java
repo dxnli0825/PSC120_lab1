@@ -7,6 +7,9 @@ class Environment {
 		 Agent agent = new Agent();
 	     agent.printMonths();
 	     agent.printRandomList(2);
+		 agent.getMonth(3);
+		 agent.printRangeOfMonths(1, 5);
+		 agent.printMonthNumber("June");
 		agent.WeekMonthDay();
 	}
 
