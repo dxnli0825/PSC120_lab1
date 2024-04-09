@@ -55,6 +55,17 @@ class Agent {
             System.out.println(monthNumber + ". " + months[i]);
         }
     }
+	public void printRangeOfMonths(int start, int end) {
+        if (start < 1 || end > months.length || start > end) {
+            System.out.println("Invalid range");
+            return;
+        }
+
+        System.out.println("Months within range " + start + " to " + end + ":");
+        for (int i = start - 1; i <= end - 1; i++) {
+            System.out.println((i + 1) + ". " + months[i]);
+        }
+    }
 	
 
 
