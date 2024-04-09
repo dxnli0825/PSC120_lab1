@@ -7,7 +7,7 @@ class Environment {
 		 Agent agent = new Agent();
 	     agent.printMonths();
 	     agent.printRandomList(2);
-		WeekMonthDay();
+		agent.WeekMonthDay();
 	}
 
 }
