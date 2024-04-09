@@ -93,7 +93,7 @@ class Agent {
 		return null;
 	}
 
-	static void WeekMonthDay() {
+	public static void WeekMonthDay() {
 		// question 2
 		//variables
 		String month;
