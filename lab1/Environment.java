@@ -1,16 +1,16 @@
-package lab1;
+package Lab1;
 
-class Environment {
+public class Environment {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		 Agent agent = new Agent();
-	     agent.printMonths();
-	     agent.printRandomList(2);
-		 agent.getMonth(3);
-		 agent.printRangeOfMonths(1, 5);
-		 agent.printMonthNumber("June");
-		agent.WeekMonthDay();
+		Agent a = new Agent();
+		a.printMonths();
+		a.printRandomList(4);
+		a.getMonth(3);
+		a.printRangeOfMonths(2, 5);
+		a.printMonthNumber("May");
+		a.weekMonthDay(366);
 	}
 
 }
