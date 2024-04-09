@@ -12,19 +12,7 @@ class Agent {
 	        };
 		
 		
-	package lab1;
-import java.util.Random;
-
-class Agent {
-	
-		Random rd = new Random();
-		
-		String[] months = {
-	            "January", "February", "March", "April", "May", "June",
-	            "July", "August", "September", "October", "November", "December"
-	        };
-		
-		
+			
 	public void printMonths()
 	{
 		for (int i =0;i<months.length;i++) {
