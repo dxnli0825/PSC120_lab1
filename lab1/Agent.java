@@ -20,6 +20,7 @@ class Agent {
         }
 	}
 	
+	
 	public void printRandomList(int length) {
         System.out.println("Randomly generated list:");
         Random rd = new Random();
@@ -55,24 +56,11 @@ class Agent {
         }
     }
 	
-}
 
 
 
 
 
-
-	
-	public void printRandomList(int length) {
-	
-		System.out.println("Randomly generated list:");
-        Random rd = new Random();
-        for (int i = 0; i <length; i++) {
-            int randomIndex = rd.nextInt(months.length);
-            System.out.println((i + 1) + ". " + months[randomIndex]);
-	}
-	}
-	
 	static String intToDay(int day) {
 		switch(day) {
 		case 0:
@@ -166,7 +154,6 @@ class Agent {
 	}
 
 }
-
 
 
 
